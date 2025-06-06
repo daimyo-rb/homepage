@@ -3,7 +3,7 @@ import { buildPortfolio } from "./portfolio";
 import { buildContact } from "./contact";
 import "./styles.css";
 
-// buildAbout();
+buildAbout();
 buildAboutTablet();
 buildPortfolio();
 buildContact();

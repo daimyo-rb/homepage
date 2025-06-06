@@ -5,7 +5,7 @@ import xTwitterIcon from './icons/x-twitter.svg'
 
 export function buildAboutTablet() {
   const content = `
-    <div class="about">
+    <div class="about-tablet">
       <div class="about-background-color"></div>
       <div class="about-content-tablet-container">
         <div class="about-content-tablet">
@@ -17,7 +17,6 @@ export function buildAboutTablet() {
       </div>
     </div>
   `;
-  // 
   const wrapper = document.createElement('div');
   wrapper.innerHTML = content;
   const element = wrapper.firstElementChild;

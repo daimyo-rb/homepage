@@ -1,4 +1,6 @@
-import guyComputer from './img/guy_on_computer.jpg'
+import guyComputer480 from './img/guy_on_computer_480_mobile.jpg'
+import guyComputer800 from './img/guy_on_computer_800_tablet.jpg'
+import guyComputer1920 from './img/guy_on_computer_1920_desktop.jpg'
 import githubIcon from './icons/github-original.svg'
 import linkedinIcon from './icons/linkedin-plain.svg'
 import xTwitterIcon from './icons/x-twitter.svg'
@@ -9,7 +11,7 @@ export function buildAboutTablet() {
       <div class="about-background-color"></div>
       <div class="about-content-tablet-container">
         <div class="about-content-tablet">
-          <img class="image-wrap" src=${guyComputer}/>
+          <img class="image-wrap" src=${guyComputer800}/>
           <div class="portrait-name-text-tablet">Ashley Williams</div>
           <h1 class="about-me-title-tablet">About me</h1>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt voluptatem eius dicta commodi libero pariatur, magnam, ducimus suscipit atque esse deleniti fuga officiis fugit voluptatibus nobis nihil nulla sint totam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt voluptatem eius dicta commodi libero pariatur, magnam, ducimus suscipit atque esse deleniti fuga officiis fugit voluptatibus nobis nihil nulla sint totam.</p>  
@@ -28,7 +30,10 @@ export function buildAbout(){
       <div class="about-background-color"></div>
       <div class="about-content">
         <div class="portrait-and-name">
-          <img class="portrait" src=${guyComputer}/>
+          <img class="portrait"
+            srcset="${guyComputer480} 480w, ${guyComputer800} 800w, ${guyComputer1920} 1920w"
+            sizes="(max-width: 600px) 480px, (max-width: 1200px) 800px, 1920px"
+          />
           <div class="portrait-name-text">Ashley Williams</div>
         </div>
         <div class="about-card">

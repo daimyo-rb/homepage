@@ -7,4 +7,3 @@ buildAbout();
 buildAboutTablet();
 buildPortfolio();
 buildContact();
-console.log('hi');

@@ -1,4 +1,6 @@
-import happyGuy from './img/happy_guy_computer.jpg'
+import happyGuy480 from './img/happy_guy_computer_cropped_480.jpg'
+import happyGuy800 from './img/happy_guy_computer_800_tablet.jpg'
+import happyGuy1920 from './img/happy_guy_computer_1920_desktop.jpg'
 import phoneIcon from './icons/phone-outline.svg'
 import emailIcon from './icons/email-outline.svg'
 import githubIcon from './icons/github-original.svg'
@@ -31,7 +33,13 @@ export function buildContact(){
             <img class="contact-twitter" src="${xTwitterIcon}"/>
           </div>
         </div>
-        <img class="contact-image" src=${happyGuy}>
+        <picture>
+          <source media="(max-width: 600px)" srcset=${happyGuy480}/>
+          <source media="(max-width: 1199px)" srcset=${happyGuy800}/>
+          <source media="(min-width: 1200px)" srcset=${happyGuy1920}/>
+          <img class="contact-image" src=${happyGuy1920}/>
+        </picture>
+        
       </div>
     </div>
   `;

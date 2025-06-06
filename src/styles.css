@@ -20,7 +20,6 @@
     font-weight: normal;
     font-style: normal;
 }
-  
 .about {
     border: 3px solid yellow;
     /* height: 200px; */
@@ -92,6 +91,43 @@
     width: 10px;
     border: 1px solid cyan;
 }
+/* tablet version of about */
+.about-content-tablet-container {
+    position: relative;
+    border: 3px solid rgb(195, 0, 255);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    padding: 100px 20px 20px 20px;
+}
+.about-content-tablet {
+    background-color: white;
+    padding: 20px;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.image-wrap {
+    float: left;
+    margin-top: -90px;
+    margin-right: 15px;
+    margin-left: -60px;
+    margin-bottom: 10px;
+    height: 250px;
+    /* width: 200px; */
+    object-fit: cover;
+    object-position: center;   
+}
+.portrait-name-text-tablet {
+    position: absolute;
+    left: 80%;
+    white-space: nowrap;
+    margin-top: -70px;
+    font-size: 40px;
+    color: white;
+    transform: translateX(-50%);
+}
+
 /* portfolio section */
 .portfolio {
     padding: 20px;

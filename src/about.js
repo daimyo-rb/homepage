@@ -3,6 +3,26 @@ import githubIcon from './icons/github-original.svg'
 import linkedinIcon from './icons/linkedin-plain.svg'
 import xTwitterIcon from './icons/x-twitter.svg'
 
+export function buildAboutTablet() {
+  const content = `
+    <div class="about">
+      <div class="about-background-color"></div>
+      <div class="about-content-tablet-container">
+        <div class="about-content-tablet">
+          <img class="image-wrap" src=${guyComputer}/>
+          <div class="portrait-name-text-tablet">Ashley Williams</div>
+          <h1 class="about-me-title-tablet">About me</h1>
+          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt voluptatem eius dicta commodi libero pariatur, magnam, ducimus suscipit atque esse deleniti fuga officiis fugit voluptatibus nobis nihil nulla sint totam. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt voluptatem eius dicta commodi libero pariatur, magnam, ducimus suscipit atque esse deleniti fuga officiis fugit voluptatibus nobis nihil nulla sint totam.</p>  
+        </div>
+      </div>
+    </div>
+  `;
+  // 
+  const wrapper = document.createElement('div');
+  wrapper.innerHTML = content;
+  const element = wrapper.firstElementChild;
+  document.body.appendChild(element);
+}
 export function buildAbout(){
   const content = `
     <div class="about">
@@ -10,7 +30,7 @@ export function buildAbout(){
       <div class="about-content">
         <div class="portrait-and-name">
           <img class="portrait" src=${guyComputer}/>
-          <div class="portrait-name-text">Ashely Williams</div>
+          <div class="portrait-name-text">Ashley Williams</div>
         </div>
         <div class="about-card">
           <h1 class="about-me-title">About me</h1>
@@ -32,4 +52,3 @@ export function buildAbout(){
   const element = wrapper.firstElementChild;
   document.body.appendChild(element);
 }
-  // 
